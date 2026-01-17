@@ -1,12 +1,50 @@
-> This report follows a responsible disclosure workflow and was conducted in a controlled lab environment.
+# Bug Hunt 101 — Recon to Report
+
+## Introduction
+This report documents vulnerabilities discovered during testing of Damn Vulnerable Web Application (DVWA) in a controlled lab environment. The purpose is to demonstrate a complete bug bounty workflow from reconnaissance to reporting.
+
+---
+
+## Reconnaissance
+
+### Tool Used
+- Nmap
+
+### Command Executed
+```bash
+nmap -sC -sV -oN nmap_scan.txt 127.0.0.1
+
+
 ### Reflected XSS (Proof)
 ![XSS Alert](../screenshots/xss_alert1.png)
 
 ### Reflected XSS (Proof)
 ![XSS Alert](.../screenshots/xss.alert2.png)
+Vulnerability 1: Reflected Cross-Site Scripting (XSS)
+Description
+Reflected XSS occurs when user input is reflected back in the response without proper sanitization, allowing execution of arbitrary JavaScript.
+Steps to Reproduce
+Open DVWA
+Navigate to XSS (Reflected)
+Enter the payload:
+<script>alert(1)</script>
 
 ### SQL Injection (Proof)
 ![SQLi Dump](../screenshots/sqli_dump.png)
+Vulnerability 2: SQL Injection (SQLi)
+Description
+SQL Injection allows attackers to manipulate backend database queries by injecting malicious SQL statements.
+Steps to Reproduce
+Navigate to SQL Injection in DVWA
+Enter:
+' OR '1'='1
 
 ### Burp Suite Evidence
 ![Burp Proxy](../screenshots/burp_proxy.png)
+Description
+Burp Suite was used to intercept HTTP requests to observe and manipulate traffic between the browser and the application.
+
+
+## Conclusion
+This project successfully demonstrated reconnaissance, vulnerability identification, exploitation, and professional documentation within a safe lab environment.
+
