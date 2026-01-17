@@ -1,1 +1,12 @@
 > This report follows a responsible disclosure workflow and was conducted in a controlled lab environment.
+### Reflected XSS (Proof)
+![XSS Alert](../screenshots/xss_alert1.png)
+
+### Reflected XSS (Proof)
+![XSS Alert](.../screenshots/xss.alert2.png)
+
+### SQL Injection (Proof)
+![SQLi Dump](../screenshots/sqli_dump.png)
+
+### Burp Suite Evidence
+![Burp Proxy](../screenshots/burp_proxy.png)
