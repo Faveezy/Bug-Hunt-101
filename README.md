@@ -1,6 +1,45 @@
 # Bug-Hunt-101
 beginner bug bounty project using DVWA (Recon - Exploit - Report)
-bug-hunt-101/
+# Bug Hunt 101 — Recon to Report
+
+This repository contains an introductory cybersecurity project with a focus on reconnaissance, vulnerability, discovery, exploitation, and professional report using a vulnerable web application. The aim is to demonstrate process.
+
+## Objectives
+- Perform reconnaissance using Nmap
+- Identify and exploit common web vulnerabilities
+- Document findings professionally
+
+## Vulnerabilities Identified
+- Reflected Cross-Site Scripting (XSS)
+- SQL Injection
+
+## Tools Used
+- DVWA
+- Nmap
+- Burp Suite (Community Edition)
+- Firefox
+- Kali Linux
+- SQLMAP
+
+## Repository Structure
+- /report — vulnerability report
+- /recon — reconnaissance results
+- /screenshots — proof of exploitation
+
+  ## Method Used
+  1. ## Environment Setup
+     confirm the vulnerable application is working.
+  2. ## Reconnaissance
+     Identify the target and perform basic network scanning.
+  3. ## Vulnerability Discovery
+     Test application inputs for common web vulnerabilities.
+  4. ## Exploitation & Proof
+     Craft payloads to confirm the vulnerability exists.
+  5. ## Reporting
+     Document the vulnerability with reproduction steps, proof, impact, and mitigation.
+
+     ## Project Structure
+     bug-hunt-101/
 │
 ├── README.md
 ├── report/
@@ -11,3 +50,6 @@ bug-hunt-101/
     ├── xss_alert.png
     ├── burp_proxy.png
     └── sqli_dump.png
+
+## Disclaimer
+This project was performed in a local lab environment for assessment purpose only.
